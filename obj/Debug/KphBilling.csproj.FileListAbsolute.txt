@@ -1,0 +1,14 @@
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\KphBilling.exe.config
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\KphBilling.exe
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\KphBilling.pdb
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.Form1.resources
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.Properties.Resources.resources
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.csproj.GenerateResource.Cache
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.csproj.CoreCompileInputs.cache
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.exe
+c:\users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.pdb
+C:\Users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\itextsharp.dll
+C:\Users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\itextsharp.xml
+C:\Users\taylorg\Source\Repos\KphBilling\KphBilling\bin\Debug\Aspose.Cells.dll
+C:\Users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.csprojAssemblyReference.cache
+C:\Users\taylorg\Source\Repos\KphBilling\KphBilling\obj\Debug\KphBilling.csproj.CopyComplete
