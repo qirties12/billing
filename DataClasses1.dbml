@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PatientManagementSystem_MSCRM" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=352-WLI-LIVE;Initial Catalog=PatientManagementSystem_MSCRM;User ID=crmlivesqluser" SettingsObjectName="KphBilling.Properties.Settings" SettingsPropertyName="PatientManagementSystem_MSCRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Nitec_patientappointmentExtensionBase" Member="Nitec_patientappointmentExtensionBases">
+    <Type Name="Nitec_patientappointmentExtensionBase">
+      <Column Name="Nitec_AdditionalInformation" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Billed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_BilledGuid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nitec_EndDateandTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentWithinXWeeks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FutureBookings" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_patientappointmentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_PatientManagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_RecommendDischarge" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_StartDateandTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_patientid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_consultantid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_contractid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_appointmenttypeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_locationid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_clinictheatrelistid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_futureappointmenttypeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_AppointmentOutcome" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Senttobilling" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_SpecialRequirements" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_NotesCompleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ImportID" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_DischargeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DischargeDescription" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_DischargeReason" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_BillingCancelled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ConfirmationLetterSent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ConfirmationLetterSentOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_confirmationlettersentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisedbyTrust_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BookedbyFixedDateLetter_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_LocationofChart_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ChartPulledOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_FirstAppointment_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Easytomakeappointment_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Easytotelephone_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Callsreturnedpromptly_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Callteamhelpful_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Hoursofoperationconveniant_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Cliniceasytofind_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Receptionstaffwelcoming_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Nursingstafffriendlyknowledgeable_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Consultantlistenedansweredquestions_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Howlonginwaitingroom_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_OverallRating_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Suggestionsforimprovement_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_OtherComments_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_AdministrationComplete_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PatientAcceptedFixedDate_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AdmissionDateTime_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureCodingInfoSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DischargeDateTime_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PatientComingFor" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Nitec_Appointmentarrangedtosuityou_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Directionsparkingarrangements_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Wasthevenueeasytofind_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Numberforclinicorhospital_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_informationreceivedeasilyunderstood_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Morethanhalfhourwait_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Reasonforhalfhourwait_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Overallimpressionofvenue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Cleanlinessofpremises_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Cleanlinessoftoilets_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Didstaffknowyourindividualneeds_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_wereyougivenenoughprivacy_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Didstaffbehaveinacourteousway_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Didstaffcommunicatewellwithyou_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Wouldyourecommendtheclinicorhospital_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Ifnopleasestatereason_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_Enoughinformationtomakedecision_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Wereyouabletodiscussconcerns_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Toldwhoresultswouldbesentto_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TheatreOrder_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Appointmentarrangedtosuityou_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Directionsparkingarrangements_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Numberforclinicorhospital_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_informationreceivedeasilyunderstood_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Morethanhalfhourwait_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Reasonforhalfhourwait_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Wouldrecommendtheclinicorhospital_3522" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TimeintoTheatre_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_TimeoutofTheatre_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Codinginfosenton_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedNoofBedNights" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_reasonforcancellation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_bookedonline" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PaymentType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PaymentDescription_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_PaymentAmount_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_paymentamount_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_livewaitingroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ChartChecked_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_SharePointChecked_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_SharePointCheckResult_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_SharePointOmissionorErrorDescription_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_SharePointFix_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_confirmedonline" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AdmissionLetterSent_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AdmissionLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_sharepointcheckedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_sharepointcheckedby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_admissionlettersentby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_Outsource_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_LettersTyped_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_eocomplete_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Attendedsecondaryclinician_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Theatrepicklist_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Referral_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_CheckLetter_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_CCorEnc_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_UrgentRedFlag_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Admined_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Clinicletternotrequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PCAudit352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_JATechnicallyDay2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JANoofBedDays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JAMedicallyFitDay2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JAReasonforOverstay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JANotFitDetail" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Nitec_JACancellations" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JACancellationDetail" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Nitec_JACulloden" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JACullodenLengthofStay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_JAReasonNoCulloden" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Nitec_JAOverstayReasonDetail" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Nitec_DictationSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_JAKneeDischargeDay3" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_JAAnaesthesiaIntratheachalBlock" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="AccountBase_Nitec_patientappointmentExtensionBase" Member="AccountBase" ThisKey="nitec_contractid" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="ContactBase_Nitec_patientappointmentExtensionBase" Member="ContactBase" ThisKey="nitec_patientid" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientappointmentExtensionBase" Member="Nitec_patientappointmentBase" ThisKey="Nitec_patientappointmentId" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationExtensionBases">
+    <Type Name="Nitec_patientinvestigationExtensionBase">
+      <Column Name="Nitec_AdditionalComments" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Billed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_BilledGuid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentWithinXWeeks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FutureBookings" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationDescription" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="Nitec_NumberofSamples" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_patientinvestigationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ResultsbackfromConsultant" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ResultsbackfromConsultantOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Resultssenttoconsultanton" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_locationid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_clinictheatrelistid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_investigationid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_patientappointmentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_requestedatpatientappointmentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_resultssenttoconsultantbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_contractid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_consultantid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_patientid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_resultsbackfromconsultanttoid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_PatientManagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Senttobilling" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nitec_importid" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Billable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ResultsReceivedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_resultsreceivedbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_BillingCancelled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_confirmreceiptofsamples" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_numberofsamplesreturned" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Nitec_totalnumberofsamplesreturned" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisedbyTrust" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationRequestedthrough_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_RequestSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_RequestAvailable_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DateRequestSent_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_MRIsentforTriage_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationProvider_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_ClockStart_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ClockRestart_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DatesentforTriage_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_BackfromTriage_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Supplementaryreporttofollow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_RequestDeclined" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ReportDictated_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_actualpatientmanagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DiabeticType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DiabeticNotes_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_AllergyNotes_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_DiabeticPatient_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Allergies_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DateDiscReturnedtoTrust_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DateReportReturnedtoTrust_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DateReportReturnedtoReferrer_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DateRequestAvailable_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_1stDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_1stInvestigationDateOffered" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_1stOfferMadeOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_2ndInvestigationDateOffered" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndOfferMadeOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_3rdDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_3rdInvestigationDateOffered" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_3rdOfferMadeOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_4thDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_4thInvestigationDateOffered" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_4thOfferMadeOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_1stoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_2ndoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_3rdoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_4thoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_RISRequestNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Numberofareas_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_CardiacPacemakerorDefibrillator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AnySurgerytoyourHeart" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AnySurgerytoyourHead" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Anyothersurgeryinthepast3months" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AnyEyeEarimplants" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ClipsPinsScrewsPlatesJointReplacement" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_JointReplacementArtificialLimbs" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AnyCoilsFiltersStentsorShunts" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Electronicallyactivatedimplants" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Injurytoyoureyeinvolvingmetal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Isthereanychanceyoucouldbepregnant" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_StartdateoflastMenstrualPeriod" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Doyouhaveacontraceptivecoil" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Piercingsetc_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_gunshotsetc_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="AccountBase_Nitec_patientinvestigationExtensionBase" Member="AccountBase" ThisKey="nitec_contractid" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="ContactBase_Nitec_patientinvestigationExtensionBase" Member="ContactBase" ThisKey="nitec_patientid" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientappointmentBase" ThisKey="nitec_requestedatpatientappointmentid" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase1" Member="Nitec_patientappointmentBase1" ThisKey="nitec_patientappointmentid" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientinvestigationBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationBase" ThisKey="Nitec_patientinvestigationId" OtherKey="Nitec_patientinvestigationId" Type="Nitec_patientinvestigationBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_consultantExtensionBase" Member="Nitec_consultantExtensionBases">
+    <Type Name="Nitec_consultantExtensionBase">
+      <Column Name="Nitec_BusinessPhone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_City" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Code" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_consultantId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_Country" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_County" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_FaxNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_FirstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_HomePhone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_JobTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_LastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_MobileNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_PagerNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_PostCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Salutation" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Street1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Street2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Street3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_ConsultationtimeinMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ReviewtimeinMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProceduretimeinMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AdditionalDetails" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_BusinessEmail_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Trust_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProfessionalRegistrationNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ProfessionalIndemnityNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ProfessionalRegistrationRenewalDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ProfessionalIndemnityRenewalDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_CVReceived_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Hospital_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProfessionalIndemnityReceived_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Governanceuptodate_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Anaesthetist_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_TrainingAcademy_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Recruitment_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PrivateResident_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PrivateVisiting_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PrivateGP_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_H3Insurance_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_WLI_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_TeleHealth_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_OtherContracts_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ComplianceReminderIssued_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_KingsbridgePrivateHospital_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AccessNI_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AccessNICertificateNo_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_AccessNIIssueDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ReferencesinOrder_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Reference1Received_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Reference2Received_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_MedicalFitnessForm_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DLorPassportphotopage_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_CopyQualifications_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_CopyCurrentHepatitisSerology_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_GMCNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_GMCExpiryDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EntryonSpecialistRegister" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_RecentForm4HospitalAppraisal_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Schedule1_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Schedule2_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DirectDebit_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Schedule3_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_RecentPhotograph_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DateofBirth_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryStreet1_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryCity_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryCounty_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryPostCode_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryCountryRegion_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryPhoneNo_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryMobileNo_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryFax_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryEmail_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_GovernanceSpeciality1_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_GovernanceSpeciality2_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_GovernanceSpeciality3_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryStreet2_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryFirstName_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_SecretaryLastName_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_LastAppraisalDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ConsultantCrashFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_consultantcrashfee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ConsultationFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_consultationfee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_DesktopReviewFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_desktopreviewfee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_PreOpAssessmentFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_preopassessmentfee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ReviewFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_reviewfee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_CVReceivedDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_KPHPPgranteddate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ClaimsDeclarationDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_CompetencyDeclarationDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Directoryphotograph_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Directorycaption_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ComplianceAuditDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ConsultantRegNo_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Schedule4" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Salutation_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_RPRB_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_clinicantemplatenumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Schedule6_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Schedule7_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_KPHPPreneweddate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Full352GroupPractisingPrivileges_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_H3withaccessto352GroupFacilities_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_H3noaccessto352GroupFacilities_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Origin_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Regularroomrental_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_OriginPPgranteddate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_excludefromonlinebookingpreopfiltering" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_preopassessmenttimeinminutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_HyponatraemiaIVPaeds_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_HyponatraemiaIVPaedsDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ResponsibleOfficer_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RevalidationDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_H3RegistrationNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RPRBStatus_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_IMCNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_IMCExpiryDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_IMCSpecialistRegister_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ALS_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PLS_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ClinicianType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactExtensionBase" Member="ContactExtensionBases">
+    <Type Name="ContactExtensionBase">
+      <Column Name="ContactId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_BreachDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DischargeDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_FirstPartialBookingLetterSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_FirstPartialBookingLetterSentOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_GPCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_GPPracticeCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_HealthandCareNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_HospitalReferenceNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_MiddleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_NHSNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Notification" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="Nitec_OriginalDateOnWaitingList" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PaediatricPatient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ParentFirstName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ParentLastName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_PatientManagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ReferralDateto352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_SecondPartialBookingLetterSent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_SecondPartialBookingLetterSentOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_SpecialRequirements" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Surcharge" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_WLINumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="nitec_secondpartialbookinglettersentbid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_firstpartialbookinglettersentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_hospitalid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_doctorid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_DischargeDescription" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Nitec_FPBLSentbyTrust" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_RereferralDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_RevisedBreachDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ImportedDischargeCode" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Nitec_DischargeLetterSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DischargeLetterType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_DischargeLetterSentOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DischargeLetterSentById" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_NextStep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ConsultantNameId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_2ndConsultantNameId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_3rdConsultantNameId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_SubStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TBAConsultant" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_TBADueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ReasonforDischarge" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PMDLabelPrinted_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PatientContact_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProvisionalDischargeDateNoResponse_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ReviewType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PrimaryDiagnosis_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_SecondaryDiagnosis_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_1stReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_3rdReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_4thReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_5thReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_6thReviewInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_1stReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_2ndReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_3rdReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_4thReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_5thReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_6thReviewInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PMDLabelPrintedOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_1streviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_2ndreviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_3rdreviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_4threviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_5threviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_6threviewinvitationsentbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_pmdlabelprintedbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_1stReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_3rdReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_4thReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_5thReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_6thReviewApptDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DateTransferedto352_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_BodyPart_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Date1stofferwasmade_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Date2ndofferwasmade_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_1stReasonableOfferDateA_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_1stReasonableOfferDateB_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndReasonableOfferDateA_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndReasonableOfferDateB_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Reasonforrefusal1stoffer_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Reasonforrefusal2ndoffer_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_GPEmail_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ReferringOther_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherStreet1_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherStreet2_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherStreet3_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherPostCode_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherMainPhone_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherEmail_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RefOtherFax_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ReferringOtherType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_KPHNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_YearofApptHidden" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Nitec_KPHChartMadeUp" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_KPHChartmadeon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ClientRefNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_OHSRefNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_PhoneContactDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_LetterContactDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_TriageReturned" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_TriageReturnedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_TriageSentToOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_triagesenttoid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_triagesenttobyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_triagereturnedbyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_CrashServicesNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_PatientClassification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_SharepointFolderCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_KPHChartsenttoStorage_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_KPHChartStorageReferenceNo_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_IncidentDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EnquiryDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_CrashHandler_352" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_Occupation_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Employer_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_EmployerAddress" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Nitec_NINumber_352" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Nitec_InjuryDetails_352" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nitec_LocationinVehicle_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_AccidentDescription_352" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedSpeedofImpact_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_SeatbeltWorn_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Quarter_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ContractEndDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_TargetDate_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TriageRequired_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_TriageAcceptedDeclined_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ReasonDeclined_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_AccessableRequirements" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_canbookonline" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_notifyappointmentsemail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_notifyappointmentssms" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_pin" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Nitec_shareinfowithothers" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_shareinfowiththreefivetwo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_LocationofWLIChart_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_PrivateCRMNo_352" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Nitec_privatepatient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ContractID_352" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_PatientsdetailscheckedwithGP_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_WLIChartTransferredtoSharepoint_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_1stPartialBookingLetterOnline_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_2ndPartialBookingLetterOnline_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ReferralattachedtoSharePoint_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ReviewStatus_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_1stPreOpInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_1stPreOpInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_2ndPreOpInvitationLetterSent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_2ndPreOpInvitationLetterSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_1stpreopinvitationlettersentby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_2ndpreopinvitationlettersentby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_sharepointcheckedon" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_sharepointcheckedby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_OfferNote_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_NextStepvalidatedon_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_BloodsRequired_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TrustDocumentsSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nitec_receivinghospitalid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_SalesCallBackNeeded_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_KPHSPtAccepted_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DiamondClub_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DiamondClubnumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_CVCIssueCode_352" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountBase" Member="AccountBases">
+    <Type Name="AccountBase">
+      <Column Name="AccountId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AccountCategoryCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TerritoryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DefaultPriceLevelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CustomerSizeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredContactMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustomerTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountRatingCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IndustryCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TerritoryCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountClassificationCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BusinessTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OriginatingLeadId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PaymentTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrimaryContactId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ParticipatesInWorkflow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="AccountNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Revenue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="NumberOfEmployees" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SIC" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="OwnershipCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MarketCap" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SharesOutstanding" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TickerSymbol" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="StockExchange" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="WebSiteURL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FtpSiteURL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EMailAddress1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EMailAddress2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EMailAddress3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DoNotPhone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotFax" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DoNotEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Telephone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DoNotPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreditLimit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreditOnHold" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsPrivate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ParentAccountId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Aging30" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Aging60" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Aging90" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PreferredAppointmentDayCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredSystemUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredAppointmentTimeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Merged" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotSendMM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MasterId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LastUsedInCampaign" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PreferredServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredEquipmentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreditLimit_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging30_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Revenue_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging90_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MarketCap_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging60_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="YomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Association Name="AccountBase_Nitec_patientappointmentExtensionBase" Member="Nitec_patientappointmentExtensionBases" ThisKey="AccountId" OtherKey="nitec_contractid" Type="Nitec_patientappointmentExtensionBase" />
+      <Association Name="AccountBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationExtensionBases" ThisKey="AccountId" OtherKey="nitec_contractid" Type="Nitec_patientinvestigationExtensionBase" />
+      <Association Name="AccountBase_AccountBase" Member="AccountBases" ThisKey="AccountId" OtherKey="MasterId" Type="AccountBase" />
+      <Association Name="AccountBase_AccountBase1" Member="AccountBases1" ThisKey="AccountId" OtherKey="ParentAccountId" Type="AccountBase" />
+      <Association Name="AccountBase_ContactBase" Member="ContactBases" ThisKey="AccountId" OtherKey="AccountId" Type="ContactBase" />
+      <Association Name="AccountBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBases" ThisKey="AccountId" OtherKey="nitec_contractid" Type="Nitec_patientprocedureExtensionBase" />
+      <Association Name="AccountBase_AccountBase" Member="AccountBase1" ThisKey="MasterId" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="AccountBase_AccountBase1" Member="AccountBase2" ThisKey="ParentAccountId" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="ContactBase_AccountBase" Member="ContactBase" ThisKey="PrimaryContactId" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="PriceLevelBase_AccountBase" Member="PriceLevelBase" ThisKey="DefaultPriceLevelId" OtherKey="PriceLevelId" Type="PriceLevelBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountExtensionBase" Member="AccountExtensionBases">
+    <Type Name="AccountExtensionBase">
+      <Column Name="AccountId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_DayCaseUoF" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_DiscountProcedure1" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_DiscountProcedure2" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_DiscountProcedure3" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_DiscountProcedure4" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_DiscountProcedure5" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_InPatientUoF" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_OpeningHoursofBookingLineNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_OutPatientUoF" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_PatientLineNumber" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Nitec_Trust" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_WLIPrefix" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_WLIStartingNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_WLISuffix" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="nitec_bookinglinecontactid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_hospitalid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationsBillable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_NumberSeedId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_TenderNo_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ReasonableOffer_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_CNA_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_CND_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_CNAx2_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_DNA_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_RTT_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_Suspensions_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_1stProcedure_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_2ndProcedure_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_1stReview_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_TertiaryReferrals_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_ClinicalRTT_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_RTTunsuitableforIS_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_Discharge_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_Investigations_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_Contact2Name_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Contact2MainPhone_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Contact2Email_352" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nitec_Contact2Fax_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_2xReviews_352" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_NoPatientsTransfered_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_NoPatientsUploaded_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_NoPatientsAwaitingUpload_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TransferUploadNotes_352" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nitec_Backstop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Contractednoofpatients_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_TariffType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TrustAcronym_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ApplyConsultantPrices" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ContractEndDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PatientManagement_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_isprivatecontract" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_allowduplicateappointmenttypes" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ApprovedConsultants_352" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Nitec_contracttype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Region" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TreatmentType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ConAddInfo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Nitec_RevAddInfo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Nitec_POAAddInfo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Nitec_ConAddInfo_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_POAAddInfo_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_RevAddInfo_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactBase" Member="ContactBases">
+    <Type Name="ContactBase">
+      <Column Name="ContactId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DefaultPriceLevelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CustomerSizeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustomerTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredContactMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LeadSourceCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginatingLeadId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PaymentTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ParticipatesInWorkflow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsBackofficeCustomer" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Salutation" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="JobTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NickName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Suffix" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="YomiFirstName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="YomiMiddleName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="YomiLastName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Anniversary" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GovernmentId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YomiFullName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmployeeId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GenderCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualIncome" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HasChildrenCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EducationCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WebSiteUrl" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FamilyStatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FtpSiteUrl" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EMailAddress1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SpousesName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AssistantName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EMailAddress2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AssistantPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMailAddress3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DoNotPhone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ManagerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ManagerPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DoNotFax" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AccountRoleCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TerritoryCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsPrivate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreditLimit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreditOnHold" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="NumberOfChildren" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildrensNames" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pager" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone2" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aging30" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Aging60" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Aging90" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ParentContactId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredSystemUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MasterId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredAppointmentDayCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredAppointmentTimeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoNotSendMM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Merged" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExternalUserIdentifier" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredEquipmentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LastUsedInCampaign" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualIncome_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreditLimit_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging60_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging90_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging30_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="ContactBase_Nitec_patientappointmentExtensionBase" Member="Nitec_patientappointmentExtensionBases" ThisKey="ContactId" OtherKey="nitec_patientid" Type="Nitec_patientappointmentExtensionBase" />
+      <Association Name="ContactBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationExtensionBases" ThisKey="ContactId" OtherKey="nitec_patientid" Type="Nitec_patientinvestigationExtensionBase" />
+      <Association Name="ContactBase_AccountBase" Member="AccountBases" ThisKey="ContactId" OtherKey="PrimaryContactId" Type="AccountBase" />
+      <Association Name="ContactBase_ContactBase" Member="ContactBases" ThisKey="ContactId" OtherKey="MasterId" Type="ContactBase" />
+      <Association Name="ContactBase_ContactBase1" Member="ContactBases1" ThisKey="ContactId" OtherKey="ParentContactId" Type="ContactBase" />
+      <Association Name="ContactBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBases" ThisKey="ContactId" OtherKey="nitec_patientid" Type="Nitec_patientprocedureExtensionBase" />
+      <Association Name="AccountBase_ContactBase" Member="AccountBase" ThisKey="AccountId" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="ContactBase_ContactBase" Member="ContactBase1" ThisKey="MasterId" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="ContactBase_ContactBase1" Member="ContactBase2" ThisKey="ParentContactId" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="PriceLevelBase_ContactBase" Member="PriceLevelBase" ThisKey="DefaultPriceLevelId" OtherKey="PriceLevelId" Type="PriceLevelBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBases">
+    <Type Name="Nitec_patientprocedureExtensionBase">
+      <Column Name="Nitec_AdditionalComments" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Billed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_BilledGuid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedAppointmentWithinXWeeks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FutureBookings" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Lateral" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="Nitec_patientprocedureId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureDescription" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="nitec_clinictheatrelistid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_contractid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_consultantid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_patientid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_locationid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_requestedatpatientappointmentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_patientappointmentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_procedureid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_PatientManagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Senttobilling" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nitec_importid" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_BillingCancelled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_OldPerformedValue" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Performedby3fivetwo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisedbyTrust_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BoardedforProcedureDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PredictedNightsStay_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ActualNightsStay_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ForAdmission_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpAssessmentRequired_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PostOpBedRequirements_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PatientPrep_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_AnaestheticRequired_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BupaCode_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_HighorRedFlagReason_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_RevisedBoardedDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_RequiresPreOpAssessment_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PreOpHealthRating_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpInterferewithWork_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpInterferewithEnjoyment_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpFeelFrustrated_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpLimitSocialActivity_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PostOpHealthRating_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PostOpInterferewithWork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PostOpInterferewithEnjoyment_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PostOpFeelFrustrated_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PostOpLimitSocialActivity_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpSurveyDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PostOpSurveyDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_FollowupHealthRating_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FollowupInterferewithWork_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FollowupSurveyDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_FollowUpInterferewithEnjoyment_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FollowupFeelFrustrated_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_FollowupLimitSocialActivity_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PlannedClinicNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_DaysSuspendedForProcedure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Dateof1stOffer_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Date1stOfferMade_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Dateof2ndOffer_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Date2ndOfferMade_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_AdmissionDay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AnaestheticType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_confirmpredictednightsstay_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_CaecumReached_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PreOpAssessmentDate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_PreOpAssessmentStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_actualpatientmanagement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Allergies_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Allergieswhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Antibiotics_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Asthma_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Bloodthiningmedication_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Bloodthiningwhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Cardiovasculardisease_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ClinicLetterChecked_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DateofQuestionnaire_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_DiabeticPatient_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Directionsgivenverbally_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Diureticorthyroidmedication_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Diureticorthyroidwhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Epileptic_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Followupadmissionlettersent_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_GA24hrpostopcareadvised_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Highbloodpressure_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Howmanycigarettes_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_IronCPLomoytilorImodium_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_IronCPLomoytilorImodiumwhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Oralcontraceptive_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Oralcontraceptivewhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Othermedication_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Othermedicationwhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Patientadvisedtobringdriver_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PatientExplicitlyAdvised_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Patientgivenadmissiondateandtime_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Questionnairedate_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Smoker_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ZantacNexiumLosecProtiumorPariet_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ZantacNexiumLosecProtiumorParietwhat_352" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Nitec_Canacceptatshortnotice_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisationRequestSentOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisationDecisionReceivedOn_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_Pathologytaken_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Referralreceiptconfirmedwithpatient_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_TaskStatus_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_H3seekingauthorisationlettersenton_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_MedicalQuestionnaireChecked_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_MedicalQuestionnaireCheckedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_AuthorisationupdatedonCRM_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_medicalquestionnairecheckedby" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_ProsthesisCostPre_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_prosthesiscostpre_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ProsthesisCostPost_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_prosthesiscostpost_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ConsumablesCostPre_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_consumablescostpre_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ConsumablesCostPost_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_consumablescostpost_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_CSSDCost_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_cssdcost_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_Smoker10perday" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_MentalDisability_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PhysicalDisability_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_BMI30_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_PreviousAnaestheticComplications_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_DifficultAirway_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Knownsurgicaladhesions_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_Repeatredosurgery_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_date3rdoffermadeon_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_date4thoffermadeon_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_dateof3rdoffer_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_dateof4thoffer_352" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nitec_1stoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_2ndoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_3rdoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_4thoffermadebyid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_1stDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_2ndDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_3rdDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_4thDeclinedReason" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PickedCost_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_pickedcost_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_RISRequestNumber_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_Numberofareas_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="AccountBase_Nitec_patientprocedureExtensionBase" Member="AccountBase" ThisKey="nitec_contractid" OtherKey="AccountId" Type="AccountBase" IsForeignKey="true" />
+      <Association Name="ContactBase_Nitec_patientprocedureExtensionBase" Member="ContactBase" ThisKey="nitec_patientid" OtherKey="ContactId" Type="ContactBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientappointmentBase" ThisKey="nitec_patientappointmentid" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase1" Member="Nitec_patientappointmentBase1" ThisKey="nitec_requestedatpatientappointmentid" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentBase" IsForeignKey="true" />
+      <Association Name="Nitec_patientprocedureBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureBase" ThisKey="Nitec_patientprocedureId" OtherKey="Nitec_patientprocedureId" Type="Nitec_patientprocedureBase" IsForeignKey="true" />
+      <Association Name="Nitec_procedureBase_Nitec_patientprocedureExtensionBase" Member="Nitec_procedureBase" ThisKey="nitec_procedureid" OtherKey="Nitec_procedureId" Type="Nitec_procedureBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_patientappointmentBase" Member="Nitec_patientappointmentBases">
+    <Type Name="Nitec_patientappointmentBase">
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_patientappointmentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientappointmentExtensionBase" Member="Nitec_patientappointmentExtensionBase" ThisKey="Nitec_patientappointmentId" OtherKey="Nitec_patientappointmentId" Type="Nitec_patientappointmentExtensionBase" Cardinality="One" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationExtensionBases" ThisKey="Nitec_patientappointmentId" OtherKey="nitec_requestedatpatientappointmentid" Type="Nitec_patientinvestigationExtensionBase" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase1" Member="Nitec_patientinvestigationExtensionBases1" ThisKey="Nitec_patientappointmentId" OtherKey="nitec_patientappointmentid" Type="Nitec_patientinvestigationExtensionBase" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBases" ThisKey="Nitec_patientappointmentId" OtherKey="nitec_patientappointmentid" Type="Nitec_patientprocedureExtensionBase" />
+      <Association Name="Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase1" Member="Nitec_patientprocedureExtensionBases1" ThisKey="Nitec_patientappointmentId" OtherKey="nitec_requestedatpatientappointmentid" Type="Nitec_patientprocedureExtensionBase" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_patientinvestigationBase" Member="Nitec_patientinvestigationBases">
+    <Type Name="Nitec_patientinvestigationBase">
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_patientinvestigationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="Nitec_patientinvestigationBase_Nitec_patientinvestigationExtensionBase" Member="Nitec_patientinvestigationExtensionBase" ThisKey="Nitec_patientinvestigationId" OtherKey="Nitec_patientinvestigationId" Type="Nitec_patientinvestigationExtensionBase" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_patientprocedureBase" Member="Nitec_patientprocedureBases">
+    <Type Name="Nitec_patientprocedureBase">
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_patientprocedureId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Association Name="Nitec_patientprocedureBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBase" ThisKey="Nitec_patientprocedureId" OtherKey="Nitec_patientprocedureId" Type="Nitec_patientprocedureExtensionBase" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_appointmenttypeExtensionBase" Member="Nitec_appointmenttypeExtensionBases">
+    <Type Name="Nitec_appointmenttypeExtensionBase">
+      <Column Name="Nitec_Appearindropdown" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_appointmenttypeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_OrderNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nitec_hrgcodeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="ProductBase_Nitec_appointmenttypeExtensionBase" Member="ProductBase" ThisKey="nitec_hrgcodeid" OtherKey="ProductId" Type="ProductBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustomerAddressBase" Member="CustomerAddressBases">
+    <Type Name="CustomerAddressBase">
+      <Column Name="ParentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerAddressId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AddressNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PrimaryContactName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Line1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Line2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Line3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="StateOrProvince" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="PostOfficeBox" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="UTCOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FreightTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UPSZone" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Telephone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_specialityExtensionBase" Member="Nitec_specialityExtensionBases">
+    <Type Name="Nitec_specialityExtensionBase">
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_specialityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_SurgeryQuestionnaire" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nitec_UseParentsOutcomeList" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nitec_parentspecialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_Acronym_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_useparentsprivateproducts" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductPriceLevelBase" Member="ProductPriceLevelBases">
+    <Type Name="ProductPriceLevelBase">
+      <Column Name="PriceLevelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ProductPriceLevelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UoMId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UoMScheduleId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DiscountTypeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ProductId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Percentage" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="QuantitySellingCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoundingPolicyCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PricingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoundingOptionCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoundingOptionAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RoundingOptionAmount_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="PriceLevelBase_ProductPriceLevelBase" Member="PriceLevelBase" ThisKey="PriceLevelId" OtherKey="PriceLevelId" Type="PriceLevelBase" IsForeignKey="true" />
+      <Association Name="ProductBase_ProductPriceLevelBase" Member="ProductBase" ThisKey="ProductId" OtherKey="ProductId" Type="ProductBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PriceLevelBase" Member="PriceLevelBases">
+    <Type Name="PriceLevelBase">
+      <Column Name="PriceLevelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BeginDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PaymentMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FreightTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="PriceLevelBase_AccountBase" Member="AccountBases" ThisKey="PriceLevelId" OtherKey="DefaultPriceLevelId" Type="AccountBase" />
+      <Association Name="PriceLevelBase_ContactBase" Member="ContactBases" ThisKey="PriceLevelId" OtherKey="DefaultPriceLevelId" Type="ContactBase" />
+      <Association Name="PriceLevelBase_ProductPriceLevelBase" Member="ProductPriceLevelBases" ThisKey="PriceLevelId" OtherKey="PriceLevelId" Type="ProductPriceLevelBase" />
+      <Association Name="PriceLevelBase_ProductBase" Member="ProductBases" ThisKey="PriceLevelId" OtherKey="PriceLevelId" Type="ProductBase" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductBase" Member="ProductBases">
+    <Type Name="ProductBase">
+      <Column Name="ProductId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DefaultUoMScheduleId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DefaultUoMId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PriceLevelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProductTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductUrl" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsKit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProductNumber" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CurrentCost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StockVolume" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="StandardCost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StockWeight" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="QuantityDecimal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuantityOnHand" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="IsStockItem" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SupplierName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="VendorName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="VendorPartNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CurrentCost_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Price_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StandardCost_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="ProductBase_Nitec_appointmenttypeExtensionBase" Member="Nitec_appointmenttypeExtensionBases" ThisKey="ProductId" OtherKey="nitec_hrgcodeid" Type="Nitec_appointmenttypeExtensionBase" />
+      <Association Name="ProductBase_ProductPriceLevelBase" Member="ProductPriceLevelBases" ThisKey="ProductId" OtherKey="ProductId" Type="ProductPriceLevelBase" />
+      <Association Name="ProductBase_Nitec_investigationExtensionBase" Member="Nitec_investigationExtensionBases" ThisKey="ProductId" OtherKey="nitec_hrgcodeid" Type="Nitec_investigationExtensionBase" />
+      <Association Name="ProductBase_Nitec_procedureExtensionBase" Member="Nitec_procedureExtensionBases" ThisKey="ProductId" OtherKey="nitec_hrgcodeid" Type="Nitec_procedureExtensionBase" />
+      <Association Name="PriceLevelBase_ProductBase" Member="PriceLevelBase" ThisKey="PriceLevelId" OtherKey="PriceLevelId" Type="PriceLevelBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductExtensionBase" Member="ProductExtensionBases">
+    <Type Name="ProductExtensionBase">
+      <Column Name="ProductId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_TariffType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AppointmentType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BupaCode_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_ProductCategory_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_isprivatepracticeproduct" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_contracttype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AdditionalInfo_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_Turnaroundtime_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_investigationExtensionBase" Member="Nitec_investigationExtensionBases">
+    <Type Name="Nitec_investigationExtensionBase">
+      <Column Name="Nitec_DetailedDescription" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_investigationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="Nitec_RequireAdditionalInformation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nitec_hrgcodeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationClassification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TariffType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BupaCode_352" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_AppointmentType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProductCategory_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_contracttype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_InvestigationCategory_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AdditionalInfo_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_additionalinfo_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="ProductBase_Nitec_investigationExtensionBase" Member="ProductBase" ThisKey="nitec_hrgcodeid" OtherKey="ProductId" Type="ProductBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_procedureExtensionBase" Member="Nitec_procedureExtensionBases">
+    <Type Name="Nitec_procedureExtensionBase">
+      <Column Name="Nitec_DetailedDescription" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Nitec_LateralInformationRequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_name" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="Nitec_procedureId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nitec_hrgcodeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_bupacodeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="nitec_specialityid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Nitec_EstimatedNightsStay_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureCategory_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PatientManagement_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureLengthmins" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PatientClassification" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_TariffType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_PreOpRequired_352" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nitec_ProductCategory_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_AppointmentType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_BupaCode_32" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nitec_AdditionalInfo_352" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Nitec_contracttype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_infocode" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_ProcedureType_352" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nitec_Consumables_352" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="Nitec_Average_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_average_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_AddInfo_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_addinfo_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_AnFee_352" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_anfee_352_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Nitec_ConFee" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="nitec_confee_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="ProductBase_Nitec_procedureExtensionBase" Member="ProductBase" ThisKey="nitec_hrgcodeid" OtherKey="ProductId" Type="ProductBase" IsForeignKey="true" />
+      <Association Name="Nitec_procedureBase_Nitec_procedureExtensionBase" Member="Nitec_procedureBase" ThisKey="Nitec_procedureId" OtherKey="Nitec_procedureId" Type="Nitec_procedureBase" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nitec_procedureBase" Member="Nitec_procedureBases">
+    <Type Name="Nitec_procedureBase">
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nitec_procedureId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Association Name="Nitec_procedureBase_Nitec_patientprocedureExtensionBase" Member="Nitec_patientprocedureExtensionBases" ThisKey="Nitec_procedureId" OtherKey="nitec_procedureid" Type="Nitec_patientprocedureExtensionBase" />
+      <Association Name="Nitec_procedureBase_Nitec_procedureExtensionBase" Member="Nitec_procedureExtensionBase" ThisKey="Nitec_procedureId" OtherKey="Nitec_procedureId" Type="Nitec_procedureExtensionBase" Cardinality="One" />
+    </Type>
+  </Table>
+</Database>

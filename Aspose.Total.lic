@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Nitec Solutions</LicensedTo>
+    <LicenseType>Developer OEM</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>140116093852</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Total</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>118088ca-e9d4-437f-9696-7e0f02af134b</SerialNumber>
+    <SubscriptionExpiry>20150116</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>ug3F/oY+NvkdaqeqkpN9ezxYogTvneW/CHEJ9D80i/q3JXWzfpN9WfsIrD+wm5B7Z1I7i27qMLBVbFXC5g0ivXtkrkbCl8DRoQud9Db2bG5UsAAwtPG7FZX9+BJXaKEF+0oHhSOihKNDfdnzCZCOJ1l5BrEBH2w8f+/I6POOjiU=</Signature>
+</License>

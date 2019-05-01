@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20, 34.5" name="DataClasses1">
+  <DataContextMoniker Name="/DataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="f53a5ffd-9453-4fb8-9b12-14a2510bebe8" absoluteBounds="0.5, 4.75, 2, 26.385480143229167">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f306e5d4-340a-4cf6-8dfc-1e25531ee752" absoluteBounds="0.51500000000000012, 5.21, 1.9700000000000002, 25.825480143229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" absoluteBounds="2.75, 4.375, 2, 18.693422851562502">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientinvestigationExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4eef7add-ec3c-4950-adfc-fa14eb044e62" absoluteBounds="2.765, 4.835, 1.9700000000000002, 18.1334228515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d06e0c7d-766f-4062-94d2-f39182329751" absoluteBounds="15.625, 0.5, 2, 25.423972981770834">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_consultantExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f204f012-179b-4204-9cd7-c281c09e0ed9" absoluteBounds="15.64, 0.96, 1.9700000000000002, 24.863972981770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc4bac0a-c121-4be9-a71a-1fc501d272ba" absoluteBounds="13.5, 0.5, 2, 33.500633138020831">
+      <DataClassMoniker Name="/DataClasses1DataContext/ContactExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d74e03a-a34f-416b-8f02-7f3fe23063a9" absoluteBounds="13.515, 0.96000000000000085, 1.9700000000000002, 32.940633138020829" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d94c0c7-f40a-42d2-9483-83b717de2477" absoluteBounds="7, 0.5, 2, 16.770408528645834">
+      <DataClassMoniker Name="/DataClasses1DataContext/AccountBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00134fcd-f7fc-4494-9b71-d89a50042bc1" absoluteBounds="7.015, 0.96, 1.9700000000000002, 16.210408528645832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 10.9789537643229); (6.90625 : 10.9789537643229); (6.90625 : 4.6875); (4.8125 : 4.6875); (4.8125 : 4.3125); (2.76871333333333 : 4.3125 : JumpStart); (2.60204666666667 : 4.3125 : JumpEnd); (2.5625 : 4.3125); (2.5625 : 4.6875); (1.5 : 4.6875); (1.5 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_Nitec_patientappointmentExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="f53a5ffd-9453-4fb8-9b12-14a2510bebe8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 0.5); (8 : 0.375); (7.02083333333333 : 0.374999999999999 : JumpStart); (6.85416666666667 : 0.375 : JumpEnd); (4.84375 : 0.375); (4.84375 : 13.8779609257813); (4.75 : 13.8779609257813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_Nitec_patientinvestigationExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8 : 0.5); (8 : 0.25); (8.44307692307692 : 0.25); (8.44307692307692 : 0.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_AccountBase" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9 : 6.20844596354167); (9.25 : 6.20844596354167); (9.25 : 11.6894272460938); (9 : 11.6894272460938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_AccountBase1" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="03468de8-a118-4e53-9157-3a919cb05943" absoluteBounds="9.125, 0.5, 2, 13.116681315104165">
+      <DataClassMoniker Name="/DataClasses1DataContext/AccountExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="362170e9-4c6c-43be-9270-6f0c6a5637e7" absoluteBounds="9.14, 0.96, 1.9700000000000002, 12.556681315104166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="145d7206-5944-4557-834b-5a7ed95208d5" absoluteBounds="11.25, 0.5, 2, 20.231834309895834">
+      <DataClassMoniker Name="/DataClasses1DataContext/ContactBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f886ab17-67ba-4433-bacc-0ef1fe1f3dd6" absoluteBounds="11.265, 0.96, 1.9700000000000002, 19.671834309895832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 7.64705206054685); (11.1875 : 7.64705206054685); (11.1875 : 0.4375); (2.625 : 0.4375); (2.625 : 4.64101399739583); (2.031252 : 4.64101399739583); (2.031252 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_Nitec_patientappointmentExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="f53a5ffd-9453-4fb8-9b12-14a2510bebe8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.718748 : 0.5); (11.718748 : 0.3125); (11.3333333333333 : 0.312499999999999 : JumpStart); (11.1666666666667 : 0.3125 : JumpEnd); (11.1458333333333 : 0.312499999999999 : JumpStart); (10.9791666666667 : 0.3125 : JumpEnd); (9.27083333333333 : 0.312499999999999 : JumpStart); (9.10416666666667 : 0.3125 : JumpEnd); (6.96875 : 0.3125); (6.96875 : 4.6875); (4.78125 : 4.6875); (4.78125 : 9.25147796289063); (4.75 : 9.25147796289063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_Nitec_patientinvestigationExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 15.7940991210937); (9 : 15.7940991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_AccountBase" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9 : 0.5); (9.375 : 0.125); (10.875 : 0.125); (11.25 : 0.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_ContactBase" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.9592307692308 : 20.7318343098958); (11.9592307692308 : 20.9818343098958); (12.5546153846154 : 20.9818343098958); (12.5546153846154 : 20.7318343098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_ContactBase" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.3746153846154 : 0.5); (12.3746153846154 : 0.25); (12.6930769230769 : 0.25); (12.6930769230769 : 0.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_ContactBase1" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" absoluteBounds="4.875, 4.75, 2, 29.077700195312502">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientprocedureExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5e13fef-e1eb-4113-9420-eaa7c4ea6b68" absoluteBounds="4.8900000000000006, 5.2100000000000009, 1.9700000000000002, 28.5177001953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 13.1403063964844); (6.875 : 13.1403063964844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/AccountBase/AccountBase_Nitec_patientprocedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 0.5); (11.25 : -0.0625); (6.9375 : -0.0625); (6.9375 : 4.64101399739583); (6.406252 : 4.64101399739583); (6.406252 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ContactBase/ContactBase_Nitec_patientprocedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9c387144-ba23-466c-a73f-8de06e928498" absoluteBounds="0.5, 0.5, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eeb48d59-89fc-4ce8-aefa-382206b6ef39" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(0.9375 : 4.57851399739583); (0.9375 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase/Nitec_patientappointmentBase_Nitec_patientappointmentExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="9c387144-ba23-466c-a73f-8de06e928498" />
+        <classShapeMoniker Id="f53a5ffd-9453-4fb8-9b12-14a2510bebe8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.4062505); (2.68538 : 2.4062505); (2.68538 : 13.8547179244792); (2.75 : 13.8547179244792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase/Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="9c387144-ba23-466c-a73f-8de06e928498" />
+        <classShapeMoniker Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 3.39062775); (2.51041666666667 : 3.39062775 : JumpStart); (2.70833333333333 : 3.39062775 : JumpEnd); (2.71663 : 3.39062775); (2.71663 : 9.2166134609375); (2.75 : 9.2166134609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase/Nitec_patientappointmentBase_Nitec_patientinvestigationExtensionBase1" />
+      <nodes>
+        <classShapeMoniker Id="9c387144-ba23-466c-a73f-8de06e928498" />
+        <classShapeMoniker Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 1.42187325); (2.59375 : 1.42187325); (2.59375 : 4.2564111328125); (2.60204666666667 : 4.2564111328125 : JumpStart); (2.76871333333333 : 4.2564111328125 : JumpEnd); (4.828125 : 4.2564111328125); (4.828125 : 4.64101399739583); (5.609374 : 4.64101399739583); (5.609374 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase/Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="9c387144-ba23-466c-a73f-8de06e928498" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.898439125); (2.53125 : 2.898439125); (2.53125 : 4.2564111328125); (2.54166666666667 : 4.2564111328125 : JumpStart); (2.79996333333333 : 4.2564111328125 : JumpEnd); (4.796875 : 4.2564111328125); (4.796875 : 4.64101399739583); (5.210935 : 4.64101399739583); (5.210935 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientappointmentBase/Nitec_patientappointmentBase_Nitec_patientprocedureExtensionBase1" />
+      <nodes>
+        <classShapeMoniker Id="9c387144-ba23-466c-a73f-8de06e928498" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d911dd7a-a0af-4164-8d9d-c71ec511bc32" absoluteBounds="2.75, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientinvestigationBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0861da42-e476-49da-9f8e-70ea2c435a3d" absoluteBounds="2.7649999999999997, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.7187475 : 4.1939111328125); (3.7187475 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientinvestigationBase/Nitec_patientinvestigationBase_Nitec_patientinvestigationExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="d911dd7a-a0af-4164-8d9d-c71ec511bc32" />
+        <classShapeMoniker Id="0d9d1bd3-cee1-4dc4-a5b7-503697c9269a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6e2bdc9e-ddd4-4ffc-9778-5a693b456b8c" absoluteBounds="4.875, 0.5, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_patientprocedureBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6cd7e34-33ed-4eee-848e-6ef82022d704" absoluteBounds="4.89, 0.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.4375 : 4.57851399739583); (6.4375 : 4.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_patientprocedureBase/Nitec_patientprocedureBase_Nitec_patientprocedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="6e2bdc9e-ddd4-4ffc-9778-5a693b456b8c" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="688b547b-af81-446a-8a50-f3db245a260e" absoluteBounds="9.125, 13.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_appointmenttypeExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de1c9439-299f-4f73-a31b-2d87cf964cc5" absoluteBounds="9.14, 14.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9818c0cb-cd06-4ad2-bc72-3ba462e2ad17" absoluteBounds="17.75, 0.5, 2, 7.7322412109375005">
+      <DataClassMoniker Name="/DataClasses1DataContext/CustomerAddressBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f26f0b3-2cc5-4ae3-b785-e5f453bc9ade" absoluteBounds="17.765, 0.96, 1.9700000000000002, 7.1722412109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdb004e7-f004-40e1-a276-f09fb2167d1d" absoluteBounds="9.125, 15.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_specialityExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="588c6918-f119-403d-b04d-370f85b1b761" absoluteBounds="9.14, 16.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1208f75b-5c0e-465d-8539-ca69ef63ca8e" absoluteBounds="7, 17.375, 2, 5.4246240234375">
+      <DataClassMoniker Name="/DataClasses1DataContext/ProductPriceLevelBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e5c69e6-6486-48d8-b3fa-29f51546d8f8" absoluteBounds="7.015, 17.835, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6a37c96-66d8-4900-bc81-88f9c8792ed6" absoluteBounds="9.125, 18.125, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/DataClasses1DataContext/PriceLevelBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf27cc38-981b-46f3-90bc-c2a330f64363" absoluteBounds="9.14, 18.585, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.125 : 20.6450105794271); (9.0625 : 20.6450105794271); (9.0625 : 17.3125); (8 : 17.3125); (8 : 17.2704085286458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PriceLevelBase/PriceLevelBase_AccountBase" />
+      <nodes>
+        <classShapeMoniker Id="a6a37c96-66d8-4900-bc81-88f9c8792ed6" />
+        <classShapeMoniker Id="6d94c0c7-f40a-42d2-9483-83b717de2477" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.125 : 19.4284171549479); (11.25 : 19.4284171549479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PriceLevelBase/PriceLevelBase_ContactBase" />
+      <nodes>
+        <classShapeMoniker Id="a6a37c96-66d8-4900-bc81-88f9c8792ed6" />
+        <classShapeMoniker Id="145d7206-5944-4557-834b-5a7ed95208d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.125 : 19.3225052897135); (9 : 19.3225052897135)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PriceLevelBase/PriceLevelBase_ProductPriceLevelBase" />
+      <nodes>
+        <classShapeMoniker Id="a6a37c96-66d8-4900-bc81-88f9c8792ed6" />
+        <classShapeMoniker Id="1208f75b-5c0e-465d-8539-ca69ef63ca8e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" absoluteBounds="11.25, 20.875, 2, 8.6937483723958326">
+      <DataClassMoniker Name="/DataClasses1DataContext/ProductBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e7dd75c-6558-4044-aa2d-bb1aa9eb4ff9" absoluteBounds="11.265, 21.335, 1.9700000000000002, 8.1337483723958321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.6046158846154 : 20.875); (11.6046158846154 : 20.7943343098958); (11.1875 : 20.7943343098958); (11.1875 : 14.7315991210937); (11.125 : 14.7315991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ProductBase/ProductBase_Nitec_appointmenttypeExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" />
+        <classShapeMoniker Id="688b547b-af81-446a-8a50-f3db245a260e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 23.017185093099); (11.140625 : 23.017185093099); (11.140625 : 23.359375); (9.015625 : 23.359375); (9.015625 : 22.984375); (8 : 22.984375); (8 : 22.7996240234375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ProductBase/ProductBase_ProductPriceLevelBase" />
+      <nodes>
+        <classShapeMoniker Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" />
+        <classShapeMoniker Id="1208f75b-5c0e-465d-8539-ca69ef63ca8e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.125 : 22.0200105794271); (11.25 : 22.0200105794271)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/PriceLevelBase/PriceLevelBase_ProductBase" />
+      <nodes>
+        <classShapeMoniker Id="a6a37c96-66d8-4900-bc81-88f9c8792ed6" />
+        <classShapeMoniker Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6c6ca57e-4e01-4694-b2e8-0822c2ba2789" absoluteBounds="7, 23, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClasses1DataContext/ProductExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94517ffd-7808-4775-a990-54684fa5f6ac" absoluteBounds="7.015, 23.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e72e237-7a42-4cd6-9802-5b6d5b8ad832" absoluteBounds="9.125, 23.375, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_investigationExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb23ecd8-3448-4ac6-8fa4-7759748c54be" absoluteBounds="9.14, 23.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 25.3181062825521); (11.125 : 25.3181062825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ProductBase/ProductBase_Nitec_investigationExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" />
+        <classShapeMoniker Id="0e72e237-7a42-4cd6-9802-5b6d5b8ad832" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5b37b783-2fb6-4942-8f94-c8eafb5dfaf8" absoluteBounds="2.75, 23.25, 2, 6.5784326171875">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_procedureExtensionBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b729c43-8ac9-4819-badc-37759a7666d2" absoluteBounds="2.765, 23.71, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 25.2218741861979); (11.1875 : 25.2218741861979); (11.1875 : 33.8902001953125); (3.75 : 33.8902001953125); (3.75 : 29.8284326171875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/ProductBase/ProductBase_Nitec_procedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="65e2111a-77ed-46ce-bd51-0b9f508cd3f2" />
+        <classShapeMoniker Id="5b37b783-2fb6-4942-8f94-c8eafb5dfaf8" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ba213590-cb46-496d-93ae-ee07256f6250" absoluteBounds="7, 25.875, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DataClasses1DataContext/Nitec_procedureBase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9afce237-c3a5-4fcf-b2c7-3f12517c4c07" absoluteBounds="7.015, 26.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7 : 27.9142569986979); (6.875 : 27.9142569986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_procedureBase/Nitec_procedureBase_Nitec_patientprocedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="ba213590-cb46-496d-93ae-ee07256f6250" />
+        <classShapeMoniker Id="1633a4ec-0e8f-4158-87db-149efc6b7ded" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 26.863376499349); (6.9375 : 26.863376499349); (6.9375 : 33.9527001953125); (4.8125 : 33.9527001953125); (4.8125 : 23.1875); (3.75 : 23.1875); (3.75 : 23.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClasses1DataContext/Nitec_procedureBase/Nitec_procedureBase_Nitec_procedureExtensionBase" />
+      <nodes>
+        <classShapeMoniker Id="ba213590-cb46-496d-93ae-ee07256f6250" />
+        <classShapeMoniker Id="5b37b783-2fb6-4942-8f94-c8eafb5dfaf8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

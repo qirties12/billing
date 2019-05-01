@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Prescriptions" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=352-WLI-LIVE;Initial Catalog=Prescriptions;User ID=crmlivesqluser" SettingsObjectName="KphBilling.Properties.Settings" SettingsPropertyName="PrescriptionsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.OHSRef" Member="OHSRefs">
+    <Type Name="OHSRef">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ref" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ptnum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="created" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
